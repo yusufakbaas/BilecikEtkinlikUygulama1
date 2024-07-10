@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'providers/event_provider.dart';
-import 'providers/user_provider.dart';
-import 'screens/add_event_screen.dart';
-import 'screens/admin_screen.dart';
-import 'screens/event_list_screen.dart';
-import 'screens/home_screen.dart';
-import 'screens/login_screen.dart';
-import 'screens/profile_screen.dart';
-import 'screens/register_screen.dart';
-import 'screens/welcome_screen.dart';
+import 'providers/event_provider.dart'; // EventProvider'ı import eder
+import 'providers/user_provider.dart'; // UserProvider'ı import eder
+import 'screens/add_event_screen.dart'; // AddEventScreen'i import eder
+import 'screens/admin_screen.dart'; // AdminScreen'i import eder
+import 'screens/event_detail_screen.dart'; // EventDetailScreen'i import eder
+import 'screens/event_list_screen.dart'; // EventListScreen'i import eder
+import 'screens/home_screen.dart'; // HomeScreen'i import eder
+import 'screens/login_screen.dart'; // LoginScreen'i import eder
+import 'screens/profile_screen.dart'; // ProfileScreen'i import eder
+import 'screens/register_screen.dart'; // RegisterScreen'i import eder
+import 'screens/welcome_screen.dart'; // WelcomeScreen'i import eder
 
 void main() {
   runApp(MyApp());
 }
 
+// MyApp sınıfı, StatelessWidget'i genişleterek uygulamanın ana yapısını oluşturur
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -39,6 +41,7 @@ class MyApp extends StatelessWidget {
           '/addEvent': (context) => AddEventScreen(),
           '/eventList': (context) => EventListScreen(),
           '/admin': (context) => AdminScreen(),
+          '/eventDetail': (context) => EventDetailScreen(), // Yeni rota eklendi
         },
       ),
     );
