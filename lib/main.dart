@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => UserProvider()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Bilecik Etkinlik Uygulaması',
         theme: ThemeData(
           primarySwatch: Colors.blue,
