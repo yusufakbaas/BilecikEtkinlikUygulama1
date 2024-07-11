@@ -108,4 +108,13 @@ class DatabaseService {
       return null;
     }
   }
+
+  Future<void> deleteUser(String id) async {
+    final db = await database;
+    await db.delete(
+      'users',
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
 }
