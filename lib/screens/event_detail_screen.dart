@@ -1,3 +1,4 @@
+// Gerekli paketler import ediliyor.
 import 'package:flutter/material.dart';
 
 import '../models/event_model.dart'; // Event model sınıfını içe aktarır
@@ -38,8 +39,8 @@ class EventDetailScreen extends StatelessWidget {
             Text(
               event.title,
               style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+                fontSize: 24, // Yazı tipi boyutu
+                fontWeight: FontWeight.bold, // Yazı tipi kalınlığı
               ),
             ),
             SizedBox(height: 8), // Başlık ile tarih arasında boşluk ekler
@@ -47,7 +48,7 @@ class EventDetailScreen extends StatelessWidget {
             Text(
               event.date,
               style: TextStyle(
-                color: Colors.grey,
+                color: Colors.grey, // Yazı tipi rengi
               ),
             ),
             SizedBox(height: 16), // Tarih ile açıklama arasında boşluk ekler
